@@ -8,3 +8,15 @@
     font-weight: bold;
     src: url("../fonts/Montserrat-Bold.ttf") format("opentype");
 }
+
+@font-face {
+    font-family: Sangha Kali;
+    font-weight: normal;
+    src: url("../fonts/SANGHAKALI-REGULAR.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Prata;
+    font-weight: normal;
+    src: url("../fonts/Prata-Regular.ttf") format("opentype");
+}

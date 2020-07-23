@@ -19,9 +19,11 @@ body {
 
 img {
     pointer-events: none;
+    object-fit: cover;
 }
 
 h1  {
+    font-family: Sangha Kali, sans-serif;
     font-weight: normal;
     font-size: 69px;
     line-height: 69px;
@@ -30,8 +32,37 @@ h1  {
     color: #F9F4F2;
 }
 
+h2 {
+    font-family: Prata, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 91px;
+    /* or 182% */
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #353030;
+}
+
+h3 {
+
+}
+
+h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #353030;
+    margin: 23px 0;
+}
+
 p {
     font-family: Montserrat, sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .mx-w {
@@ -96,4 +127,85 @@ p {
 
 .header__social a {
     margin-left: 33px;
+}
+
+
+.main {
+    background: #F9F4F2;
+}
+
+.about {
+    padding: 120px 0;
+}
+
+.about__content {
+    display: flex;
+    align-items: center;
+}
+
+.about__img {
+    margin-right: 80px;
+    position: relative;
+}.about__img img:nth-of-type(2) {
+    position: absolute;
+    left: -131px;
+    top: -85px;
+ }
+
+.about__description p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 138.1%;
+    /* or 22px */
+    color: #353030;
+}
+
+.principles {
+    background: #F4EAE8;
+    padding: 87px 0;
+}
+
+.principles__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 77px;
+}
+
+.principles__content img {
+    height: 73px;
+}
+
+.principles__content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 145.1%;
+    color: #353030;
+}
+
+
+.footer {
+    width: 100%;
+    background: #F9F4F2;
+    height: 140px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+} .footer__content > p,
+  .footer__content a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 160%;
+      /* identical to box height, or 26px */
+      letter-spacing: 0.01em;
+      color: #323232;
+  }
+
+.footer__social a {
+    margin-right: 36px;
 }
