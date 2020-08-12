@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css?">
     <link rel="stylesheet" href="css/fonts.css?">
+    <link rel="stylesheet" href="css/adaptive.css?"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Астрологические консультации</title>
 </head>
 <body>
@@ -11,17 +13,40 @@
         <header class="header">
             <div class="header__top mx-w">
                 <a class="header__logo">
-                    <img src="img/header/logo.png" alt="">
+                    <img src="img/header/logo.svg" alt="">
                 </a>
-                <nav class="header__nav">
+                <nav class="header__nav mobile-hidden">
                     <a href="#about">Обо мне</a>
                     <a href="#products">Продукты</a>
                     <a href="#principles">Принципы</a>
                     <a href="#contacts">Контакты</a>
                 </nav>
-                <div class="header__contacts">
+                <div class="header__contacts mobile-hidden">
                     +7 812 333 08 80
                     <img src="img/header/moon1.png" alt="">
+                </div>
+                <div id="burger" class="header__burger desktop-hidden" onclick="burgerMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="burger-mask" class="burger-mask desktop-hidden">
+                    <div class="burger-menu">
+                        <div class="burger-menu__content">
+                            <div class="burger-menu__item">
+                                <a href="#about">Обо мне</a>
+                            </div>
+                            <div class="burger-menu__item">
+                                <a href="#products">Продукты</a>
+                            </div>
+                            <div class="burger-menu__item">
+                                <a href="#principles">Принципы</a>>
+                            </div>
+                            <div class="burger-menu__item">
+                                <a href="#contacts">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="header__middle mx-w">
@@ -33,10 +58,12 @@
                 <p>
                     Только четкая астрология!
                     <br>
-                    Конкретные действия для конкретного результата
+                    Конкретные действия
+                    <br class="desktop-hidden">
+                    для конкретного результата
                 </p>
             </div>
-            <div class="header__bottom mx-w">
+            <div class="header__bottom mx-w mobile-hidden">
                 <a href="#about">
                     <img src="img/header/arrow-down.svg" alt="">
                 </a>
@@ -62,11 +89,11 @@
                         <p>
                             Привет! Я Галина - Четкий астролог
                             <br>
-                            Я не пугаю и не гадаю. Даю четкие ответы на
-                            <br>
-                            вопросы, которые вас интересуют. Могу дать
-                            <br>
-                            конкретную карту, которая приведет вас к цели!
+                            Я не пугаю и не гадаю. Даю четкие ответы <br class="desktop-hidden"> на
+                            <br class="mobile-hidden">
+                            вопросы, которые вас интересуют.<br class="desktop-hidden"> Могу дать
+                            <br class="mobile-hidden">
+                            конкретную карту,<br class="desktop-hidden"> которая приведет вас к цели!
                             <br>
                             <br>
                             Если не верите в астрологию, это отлично!
@@ -85,11 +112,12 @@
                 <div class="products__content">
                     <div class="products__item">
                         <div class="products__img">
+                            <h3 class="desktop-hidden-hidden">Онлайн-консультация</h3>
                             <img src="img/products/1.png" alt="">
                             <img src="img/products/1.svg" alt="">
                         </div>
                         <div class="products__offer">
-                            <h3>Онлайн-консультация</h3>
+                            <h3 class="mobile-hidden">Онлайн-консультация</h3>
                             <p>
                                 Вся информация по вашим данным
                                 <br>
@@ -150,11 +178,12 @@
                     </div>
                     <div class="products__item">
                         <div class="products__img">
+                            <h3 class="desktop-hidden">Детская <br> онлайн-консультация</h3>
                             <img src="img/products/2.png" alt="">
                             <img src="img/products/2.svg" alt="">
                         </div>
                         <div class="products__offer">
-                            <h3>Детская онлайн-консультация</h3>
+                            <h3 class="mobile-hidden">Детская онлайн-консультация</h3>
                             <p>
                                 Уникальная возможность дать ребенку крутое будущее,
                                 <br>
@@ -209,12 +238,13 @@
                     </div>
                     <div class="products__item">
                         <div class="products__img">
+                            <h3 class="desktop-hidden">#GOзасчастьем</h3>
                             <img src="img/products/3.png" alt="">
                             <img src="img/products/3-2.svg" alt="">
                         </div>
                         <div class="products__offer">
-                            <img src="img/products/3-1.svg" alt="">
-                            <h3>#GOзасчастьем</h3>
+                            <img class="mobile-hidden" src="img/products/3-1.svg" alt="">
+                            <h3 class="mobile-hidden">#GOзасчастьем</h3>
                             <p>
                                 Солнце Зажигающие Действия по дате,
                                 <br>
@@ -235,12 +265,13 @@
                     </div>
                     <div class="products__item">
                         <div class="products__img">
+                            <h3 class="desktop-hidden">#GOпоженски</h3>
                             <img src="img/products/4.png" alt="">
                             <img src="img/products/4-2.svg" alt="">
                         </div>
                         <div class="products__offer">
-                            <img src="img/products/4-1.svg" alt="">
-                            <h3>#GOпоженски</h3>
+                            <img class="mobile-hidden" src="img/products/4-1.svg" alt="">
+                            <h3 class="mobile-hidden">#GOпоженски</h3>
                             <p>
                                 Список действий, пробуждающих
                                 <br>
@@ -261,12 +292,13 @@
                     </div>
                     <div class="products__item">
                         <div class="products__img">
+                            <h3 class="desktop-hidden">#GOзаденьгами</h3>
                             <img src="img/products/5.png" alt="">
                             <img src="img/products/5-2.svg" alt="">
                         </div>
                         <div class="products__offer">
-                            <img src="img/products/5-1.svg" alt="">
-                            <h3>#GOзаденьгами</h3>
+                            <img class="mobile-hidden" src="img/products/5-1.svg" alt="">
+                            <h3 class="mobile-hidden">#GOзаденьгами</h3>
                             <p>
                                 Что вам нужно делать, чтобы были
                                 <br>
@@ -284,16 +316,18 @@
                         </div>
                     </div>
                     <p class="products__price">
-                        Пакет #GOзасчастьем + #GOпоженски = 1500 руб
+                        Пакет <br class="desktop-hidden"> <span>#GOзасчастьем + #GOпоженски</span> = 1500 руб
                         <br>
-                        Пакет #GOзасчастьем + #GOзаденьгами = 1500 руб
+                        <br class="desktop-hidden">
+                        Пакет <br class="desktop-hidden"> <span>#GOзасчастьем + #GOзаденьгами</span> = 1500 руб
                         <br>
-                        Пакет #GOзасчастьем + #GOпоженски + #GOзаденьгами = 2000 руб
+                        <br class="desktop-hidden">
+                        Пакет <br class="desktop-hidden"> <span>#GOзасчастьем + #GOпоженски + <br class="desktop-hidden"> #GOзаденьгами</span> = 2000 руб
                     </p>
                     <img class="products__end" src="img/products/6.svg" width="240" alt="">
                 </div>
             </section>
-            <section id="principles" class="principles">
+            <section id="principles" class="principles mobile-hidden">
                 <h2>Принципы</h2>
                 <div class="principles__content mx-w">
                     <div class="principles__item">
@@ -343,7 +377,7 @@
                     </div>
                 </div>
             </section>
-            <section class="consultation">
+            <section class="consultation mobile-hidden">
                 <h2>Заявка на консультацию</h2>
                 <p>Пожалуйста заполните анкету с вопросами </p>
                 <img src="img/consultation/1.svg" alt="">
@@ -370,7 +404,7 @@
                     <button>Отправить</button>
                 </form>
             </section>
-            <section id="contacts" class="contacts">
+            <section id="contacts" class="contacts mobile-hidden">
                 <h2>Контакты</h2>
                 <div class="contacts__content mx-w">
                     <div class="contacts__description">
@@ -397,7 +431,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer mobile-hidden">
             <div class="footer__content mx-w">
                 <a class="footer__logo" href="">
                     <img src="img/footer/logo.svg" alt="">

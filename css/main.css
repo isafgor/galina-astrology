@@ -286,6 +286,10 @@ button {
     color: #353030;
 }
 
+.products__price span {
+    color: inherit;
+}
+
 .products__end {
     position: absolute;
     bottom: -142px;
