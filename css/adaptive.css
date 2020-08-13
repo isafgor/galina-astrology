@@ -32,6 +32,12 @@
         line-height: 27px;
     }
 
+    h4 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
     .main {
         overflow: hidden !important;
     }
@@ -278,6 +284,7 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 168.1%;
+        align-self: flex-start;
     }
 
     .products__price span {
@@ -294,6 +301,12 @@
         padding: 20px 0;
     }
 
+    .principles p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 135.1%;
+    }
+
     .principles h2 {
         position: relative;
     }
@@ -301,10 +314,34 @@
     .principles__content {
         flex-direction: column;
         padding: 0 24px;
+        margin-top: 30px;
     }
 
     .principles__item {
         margin-bottom: 104px;
+    }
+
+    .consultation {
+        padding: 80px 24px;
+    }
+
+    .consultation p {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 134.9%;
+    }
+
+    .consultation ol {
+        padding-left: 22px;
+    }
+
+    .consultation__last input {
+        margin-left: 0;
+    }
+
+    .consultation button {
+        width: 100%;
+        margin-left: 0;
     }
 
 }

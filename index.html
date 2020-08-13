@@ -380,11 +380,11 @@
                     </div>
                 </div>
             </section>
-            <section class="consultation mobile-hidden">
+            <section class="consultation">
                 <h2>Заявка на консультацию</h2>
                 <p>Пожалуйста заполните анкету с вопросами </p>
-                <img src="img/consultation/1.svg" alt="">
-                <img src="img/consultation/2.svg" alt="">
+                <img class="mobile-hidden" src="img/consultation/1.svg" alt="">
+                <img class="mobile-hidden" src="img/consultation/2.svg" alt="">
                 <form action="">
                     <ol>
                         <li><input type="text" placeholder="Имя, фамилия"></li>
@@ -401,8 +401,10 @@
                     </ol>
                     <div class="consultation__last">
                         <input type="text" placeholder="- что тревожит больше всего?">
-                        <input type="text" placeholder="- что есть сейчас по этим сферам, что хочется?">
-                        <input type="text" placeholder="- чего ожидаете от взаимодействия с астрологом?">
+                        <input class="mobile-hidden" type="text" placeholder="- что есть сейчас по этим сферам, что хочется?">
+                        <input class="desktop-hidden" type="text" placeholder="- что есть сейчас по этим сферам?">
+                        <input class="mobile-hidden" type="text" placeholder="- чего ожидаете от взаимодействия с астрологом?">
+                        <input class="desktop-hidden" type="text" placeholder="- ожидания от общения с астрологом?">
                     </div>
                     <button>Отправить</button>
                 </form>
