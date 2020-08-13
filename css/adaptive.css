@@ -284,4 +284,27 @@
         color: #E76AA4;
     }
 
+    .products__end {
+        top: -86px;
+        left: 37%;
+        width: 100px;
+    }
+
+    .principles {
+        padding: 20px 0;
+    }
+
+    .principles h2 {
+        position: relative;
+    }
+
+    .principles__content {
+        flex-direction: column;
+        padding: 0 24px;
+    }
+
+    .principles__item {
+        margin-bottom: 104px;
+    }
+
 }
