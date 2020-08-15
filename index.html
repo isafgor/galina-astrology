@@ -409,7 +409,7 @@
                     <button>Отправить</button>
                 </form>
             </section>
-            <section id="contacts" class="contacts mobile-hidden">
+            <section id="contacts" class="contacts">
                 <h2>Контакты</h2>
                 <div class="contacts__content mx-w">
                     <div class="contacts__description">
@@ -420,9 +420,9 @@
                             <br>
                             и с радостью отвечу на все вопросы
                         </p>
-                        <span>+7 812 333 08 80</span>
-                        <span>gp12021999@gmail.com</span>
-                        <div class="contacts__links">
+                        <span class="mobile-hidden">+7 812 333 08 80</span>
+                        <span class="mobile-hidden">gp12021999@gmail.com</span>
+                        <div class="contacts__links mobile-hidden">
                             <a href=""><img src="img/contacts/whats.svg" alt=""></a>
                             <a href=""><img src="img/contacts/telegram.svg" alt=""></a>
                         </div>
@@ -436,7 +436,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer mobile-hidden">
+        <footer class="footer">
             <div class="footer__content mx-w">
                 <a class="footer__logo" href="">
                     <img src="img/footer/logo.svg" alt="">
@@ -444,11 +444,18 @@
                 <p>gp12021999@gmail.com</p>
                 <p>+7 812 333 08 80</p>
                 <div class="footer__social">
-                    <a href="">
+                    <a href="" class="mobile-hidden">
                         <img src="img/footer/whats.svg" alt="">
                     </a>
-                    <a href="">
+                    <a href="" class="mobile-hidden">
                         <img src="img/footer/telegram.svg" alt="">
+                    </a>
+
+                    <a href="" class="desktop-hidden">
+                        <img src="img/contacts/whats.svg" alt="">
+                    </a>
+                    <a href="" class="desktop-hidden">
+                        <img src="img/contacts/telegram.svg" alt="">
                     </a>
                 </div>
                 <a class="footer__created" href="https://thesaftech.com">
