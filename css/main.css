@@ -154,7 +154,7 @@ button {
 
 .main {
     background: #F9F4F2;
-    overflow-y: hidden;
+    overflow: hidden
 }
 
 .about {

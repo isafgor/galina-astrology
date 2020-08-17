@@ -427,11 +427,11 @@
                             <a href=""><img src="img/contacts/telegram.svg" alt=""></a>
                         </div>
                     </div>
-                    <form class="contacts__form">
-                        <input type="text" placeholder="Имя">
-                        <input type="text" placeholder="E-mail">
-                        <input type="text" placeholder="Тема для разговора">
-                        <button>Отправить</button>
+                    <form method="post" action="contact.php" class="contacts__form">
+                        <input type="text" id="name" placeholder="Имя">
+                        <input type="text" id="email" placeholder="E-mail">
+                        <input type="text" id="message" placeholder="Тема для разговора">
+                        <button type="button" id="send">Отправить</button>
                     </form>
                 </div>
             </section>
@@ -470,5 +470,6 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js?"></script>
+    <script src="js/contact.js?"></script>
 </body>
 </html>

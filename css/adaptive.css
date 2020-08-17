@@ -38,10 +38,6 @@
         line-height: 27px;
     }
 
-    .main {
-        overflow: hidden !important;
-    }
-
     .burger-mask {
         display: none;
         position: fixed;
