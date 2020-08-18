@@ -385,28 +385,26 @@
                 <p>Пожалуйста заполните анкету с вопросами </p>
                 <img class="mobile-hidden" src="img/consultation/1.svg" alt="">
                 <img class="mobile-hidden" src="img/consultation/2.svg" alt="">
-                <form action="">
+                <form action="consultation.php" method="post">
                     <ol>
-                        <li><input type="text" placeholder="Имя, фамилия"></li>
-                        <li><input type="text" placeholder="Дата рождения"></li>
-                        <li><input type="text" placeholder="Время рождения (если знаете)"></li>
-                        <li><input type="text" placeholder="Место рождения"></li>
-                        <li><input type="text" placeholder="Телефон (WhatsApp, Telegram)"></li>
-                        <li><input type="text" placeholder="Образование"></li>
-                        <li><input type="text" placeholder="Профессия (навыки, опыт работы)"></li>
-                        <li><input type="text" placeholder="Хобби"></li>
-                        <li><input type="text" placeholder="Семейное положение, дети"></li>
-                        <li><input type="text" placeholder="Обращались раньше к астрологам/эзотерикам?"></li>
-                        <li><input type="text" placeholder="Какие запросы у Вас есть?"></li>
+                        <li><input type="text" id="fio" placeholder="Имя, фамилия"></li>
+                        <li><input type="text" id="birthday" placeholder="Дата рождения"></li>
+                        <li><input type="text" id="time" placeholder="Время рождения (если знаете)"></li>
+                        <li><input type="text" id="place" placeholder="Место рождения"></li>
+                        <li><input type="text" id="phone" placeholder="Телефон (WhatsApp, Telegram)"></li>
+                        <li><input type="text" id="education" placeholder="Образование"></li>
+                        <li><input type="text" id="career" placeholder="Профессия (навыки, опыт работы)"></li>
+                        <li><input type="text" id="hobby" placeholder="Хобби"></li>
+                        <li><input type="text" id="family" placeholder="Семейное положение, дети"></li>
+                        <li><input type="text" id="space" placeholder="Обращались раньше к астрологам/эзотерикам?"></li>
+                        <li><input type="text" id="wish" placeholder="Какие запросы у Вас есть?"></li>
                     </ol>
                     <div class="consultation__last">
-                        <input type="text" placeholder="- что тревожит больше всего?">
-                        <input class="mobile-hidden" type="text" placeholder="- что есть сейчас по этим сферам, что хочется?">
-                        <input class="desktop-hidden" type="text" placeholder="- что есть сейчас по этим сферам?">
-                        <input class="mobile-hidden" type="text" placeholder="- чего ожидаете от взаимодействия с астрологом?">
-                        <input class="desktop-hidden" type="text" placeholder="- ожидания от общения с астрологом?">
+                        <input type="text" id="q1" placeholder="- что тревожит больше всего?">
+                        <input type="text" id="q2" placeholder="- что есть сейчас по этим сферам?">
+                        <input type="text" id="q3" placeholder="- ожидания от общения с астрологом?">
                     </div>
-                    <button>Отправить</button>
+                    <button type="button" id="submit">Отправить</button>
                 </form>
             </section>
             <section id="contacts" class="contacts">

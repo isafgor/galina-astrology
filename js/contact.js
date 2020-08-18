@@ -25,4 +25,62 @@ $(document).ready(function(){
             }
         });
     });
+
+    $('#submit').click(function(){
+        // собираем данные с формы
+        let fio    = $('#fio').val();
+        let birthday   = $('#birthday').val();
+        let time   = $('#time').val();
+        let place   = $('#place').val();
+        let phone   = $('#phone').val();
+        let education   = $('#education').val();
+        let career   = $('#career').val();
+        let hobby   = $('#hobby').val();
+        let family   = $('#family').val();
+        let space   = $('#space').val();
+        let wish   = $('#wish').val();
+        let q1   = $('#q1').val();
+        let q2   = $('#q2').val();
+        let q3   = $('#q3').val();
+        // отправляем данные
+        $.ajax({
+            url: "contact.php",
+            type: "post",
+            data: {
+                "fio":    fio,
+                "birthday":   birthday,
+                "place": place,
+                "time": time,
+                "phone": phone,
+                "education": education,
+                "career": career,
+                "hobby": hobby,
+                "family": family,
+                "space": space,
+                "wish": wish,
+                "q1": q1,
+                "q2": q2,
+                "q3": q3,
+            },
+            error:function(){$("#erconts").html("Произошла ошибка!");},
+            success: function (result) {
+                /* В случае удачной обработки и отправки выполнится следующий код*/
+                $('#fio').val('');
+                $('#birthday').val('');
+                $('#time').val('');
+                $('#place').val('');
+                $('#phone').val('');
+                $('#education').val('');
+                $('#career').val('');
+                $('#hobby').val('');
+                $('#family').val('');
+                $('#space').val('');
+                $('#wish').val('');
+                $('#q1').val('');
+                $('#q2').val('');
+                $('#q3').val('');
+                // displayModal('modal','flex');
+            }
+        });
+    });
 });
