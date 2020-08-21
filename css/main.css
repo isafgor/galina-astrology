@@ -499,3 +499,141 @@ button {
 .footer__social a {
     margin-right: 36px;
 }
+
+
+
+.send-modal__mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    opacity: 0
+}
+
+.send-modal__window {
+    background: #F4EAE8;
+    /*border: 1px solid #B8B8B8;*/
+    width: 626px;
+    min-height: 474px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.send-modal__window div {
+    text-align: center;
+}
+
+.send-modal__window div p {
+    color: #7A7A7A;
+    /*margin-top: 10px;*/
+    margin-bottom: 33px
+}
+
+.send-modal__window h3 {
+    line-height: 110%
+}
+
+.send-modal__window form {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 0;
+}
+
+.send-modal__window form input {
+    border: 0;
+    border-bottom: 1px solid #2B2B2B;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 126.3%;
+    /* or 20px */
+    text-transform: uppercase;
+    color: #202020;
+    outline: none !important;
+    width: 375px;
+    height: 32px;
+    margin-bottom: 29px;
+}
+
+/*.send-modal__window button {*/
+/*    background: linear-gradient(90deg, #EF1C54 4.41%, #B80465 94.83%);*/
+/*    color: #FFFFFF;*/
+/*    border: 0;*/
+/*    width: 301px;*/
+/*    height: 45px;*/
+/*    font-size: 16px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+
+.send-modal__window div img {
+    margin-bottom: 20px
+}
+
+.send-modal__cross {
+    position: absolute;
+    color: #A2195B;
+    right: 0;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    /*border: 1px solid #B8B8B8;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border-radius: 50%;*/
+    cursor: pointer
+}
+
+.send-modal__body h3 {
+    font-family: Prata, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 33px;
+    line-height: 91px;
+    margin: 0;
+}
+
+.send-modal__body p {
+    line-height: 1.5;
+    margin-bottom: 0 !important;
+}
+
+.send-modal__body input {
+    text-transform: none !important;
+}
+
+.send-modal__body form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-modal__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    text-align: center;
+    color: #1E1E1E !important;
+    margin: 40px 0 !important;
+}
+
+.send-modal__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    width: 100%;
+    height: 100%;
+}

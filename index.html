@@ -173,7 +173,7 @@
                                     Ваши вопросы по любой сфере
                                 </li>
                             </ul>
-                            <button>3000р</button>
+                            <button onclick="displayModal('modal1','flex')">3000р</button>
                         </div>
                     </div>
                     <div class="products__item">
@@ -233,7 +233,7 @@
                                     Ваши вопросы по любой сфере
                                 </li>
                             </ul>
-                            <button>3000р</button>
+                            <button onclick="displayModal('modal1','flex')">3000р</button>
                         </div>
                     </div>
                     <div class="products__item">
@@ -260,7 +260,7 @@
                                 <br>
                                 удача - все ворвется в вашу жизнь!
                             </p>
-                            <button>1000р</button>
+                            <button onclick="displayModal('modal1','flex')">1000р</button>
                         </div>
                     </div>
                     <div class="products__item">
@@ -287,7 +287,7 @@
                                 <br>
                                 выполнять действия из этого списка.
                             </p>
-                            <button>1000р</button>
+                            <button onclick="displayModal('modal1','flex')">1000р</button>
                         </div>
                     </div>
                     <div class="products__item">
@@ -312,7 +312,7 @@
                                 <br>
                                 В общем, это все про деньги!
                             </p>
-                            <button>1000р</button>
+                            <button onclick="displayModal('modal1','flex')">1000р</button>
                         </div>
                     </div>
                     <p class="products__price">
@@ -421,7 +421,7 @@
                         <span class="mobile-hidden">+7 812 333 08 80</span>
                         <span class="mobile-hidden">gp12021999@gmail.com</span>
                         <div class="contacts__links mobile-hidden">
-                            <a href=""><img src="img/contacts/whats.svg" alt=""></a>
+                            <a href="https://wa.me/78123330880"><img src="img/contacts/whats.svg" alt=""></a>
                             <a href=""><img src="img/contacts/telegram.svg" alt=""></a>
                         </div>
                     </div>
@@ -442,14 +442,14 @@
                 <p>gp12021999@gmail.com</p>
                 <p>+7 812 333 08 80</p>
                 <div class="footer__social">
-                    <a href="" class="mobile-hidden">
+                    <a href="https://wa.me/78123330880" class="mobile-hidden">
                         <img src="img/footer/whats.svg" alt="">
                     </a>
                     <a href="" class="mobile-hidden">
                         <img src="img/footer/telegram.svg" alt="">
                     </a>
 
-                    <a href="" class="desktop-hidden">
+                    <a href="https://wa.me/78123330880" class="desktop-hidden">
                         <img src="img/contacts/whats.svg" alt="">
                     </a>
                     <a href="" class="desktop-hidden">
@@ -463,7 +463,47 @@
         </footer>
     </div>
     <div id="modals">
-
+        <div class="send-modal__mask" id="modal1">
+            <div class="send-modal__window">
+                <span class="send-modal__cross" onclick="displayModal('modal1','none')">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="2.32046" y1="2.2168" x2="24.1806" y2="24.077" stroke="#A2195B" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="1" y1="-1" x2="31.9149" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 25.8438 2.2168)" stroke="#A2195B" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <div class="send-modal__body">
+                    <h3>Давайте свяжемся</h3>
+                    <form method="post" action="contact.php" class="contacts__form">
+                        <input type="text" id="name-modal" placeholder="Имя">
+                        <input type="text" id="email-modal" placeholder="E-mail">
+                        <input type="text" id="message-modal" placeholder="Какой тариф Вам понравился?">
+                        <button type="button" id="send-modal" onclick="displayModal('modal1','none')">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="send-modal__mask" id="modal2">
+            <div class="send-modal__window">
+                <span class="send-modal__cross" onclick="displayModal('modal2','none')">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="2.32046" y1="2.2168" x2="24.1806" y2="24.077" stroke="#A2195B" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="1" y1="-1" x2="31.9149" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 25.8438 2.2168)" stroke="#A2195B" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <div class="send-modal__body">
+                    <img src="img/love.svg" alt="">
+                    <h3>Отправлено</h3>
+                    <p>
+                        Спасибо, заявка уже у меня.
+                        <br>
+                        Скоро выйду на связь.
+                    </p>
+                    <div>
+                        <button class="button" onclick="displayModal('modal2','none')">Прекрасно</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/jquery.min.js"></script>

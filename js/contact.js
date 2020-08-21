@@ -21,7 +21,32 @@ $(document).ready(function(){
                 $('#name').val('');
                 $('#email').val('');
                 $('#message').val('');
-                // displayModal('modal','flex');
+                displayModal('modal2','flex');
+            }
+        });
+    });
+
+    $('#send-modal').click(function(){
+        // собираем данные с формы
+        let user_name    = $('#name-modal').val();
+        let user_email   = $('#email-modal').val();
+        let text_comment = $('#message-modal').val();
+        // отправляем данные
+        $.ajax({
+            url: "contact.php",
+            type: "post",
+            data: {
+                "name":    user_name,
+                "email":   user_email,
+                "message": text_comment
+            },
+            error:function(){$("#erconts").html("Произошла ошибка!");},
+            success: function (result) {
+                /* В случае удачной обработки и отправки выполнится следующий код*/
+                $('#name-modal').val('');
+                $('#email-modal').val('');
+                $('#message-modal').val('');
+                displayModal('modal2','flex');
             }
         });
     });
@@ -79,7 +104,7 @@ $(document).ready(function(){
                 $('#q1').val('');
                 $('#q2').val('');
                 $('#q3').val('');
-                // displayModal('modal','flex');
+                displayModal('modal2','flex');
             }
         });
     });
