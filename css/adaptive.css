@@ -399,4 +399,18 @@
         margin-right: 26px;
     }
 
+    .send-modal__window {
+        width: 90%;
+        padding: 0 25px;
+    }
+
+    .send-modal__window input {
+        width: 100% !important;
+    }
+
+    .send-modal__window h3 {
+        font-size: 22px;
+        line-height: 91px;
+    }
+
 }

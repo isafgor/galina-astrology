@@ -1,5 +1,5 @@
 <?php
-$to      = 'isafgor@gmail.com';
+$to      = 'gp12021999@gmail.com';
 $subject = 'Заявка на консультацию';
 $fio = $_POST['fio'];
 $birthday = $_POST['birthday'];
@@ -19,7 +19,7 @@ $q3 = $_POST['q3'];
 mail(
     $to,
     $subject,
-     "Имя фамилия: $fio\r\n
+     "Имя, фамилия: $fio\r\n
      Дата рождения: $birthday\r\n
      Время рождения: $time\r\n
      Место рождения: $place\r\n
