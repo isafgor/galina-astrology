@@ -500,6 +500,12 @@ button {
     margin-right: 36px;
 }
 
+.footer__social a,
+.header__social a,
+.contacts__links a {
+    display: inline-block;
+}
+
 
 
 .send-modal__mask {

@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1025px) {
     .desktop-hidden {
-        display: none;
+        display: none !important;
     }
 }
 

@@ -69,7 +69,7 @@ $(document).ready(function(){
         let q3   = $('#q3').val();
         // отправляем данные
         $.ajax({
-            url: "contact.php",
+            url: "consultation.php",
             type: "post",
             data: {
                 "fio":    fio,
