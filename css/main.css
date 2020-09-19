@@ -93,7 +93,7 @@ button {
 }
 
 .header {
-    background: url('../img/header/header-background.png') 50% no-repeat;
+    background: url('../img/header/header-background.jpg') 50% no-repeat;
     background-size: cover;
     padding-top: 36px;
     padding-bottom: 61px;
@@ -229,6 +229,27 @@ button {
 
 .products__item:nth-of-type(odd) .products__offer {
     order: 1;
+}
+
+.products__offer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 283px;
+    height: 46px;
+    background: linear-gradient(200.65deg, #FDC27B -30.04%, #EB7EBF 94.99%);
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-family: Montserrat, 'sans-serif';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 40px;
 }
 
 .products__item:nth-of-type(1) .products__img img:nth-of-type(2) {

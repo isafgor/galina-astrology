@@ -1,5 +1,5 @@
 <?php
-$to      = 'gp12021999@gmail.com';
+$to      = 'astrologpolshchikova@gmail.com';
 $subject = 'Письмо от клиента';
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -9,7 +9,7 @@ mail(
     $subject,
 
     "Имя потенциального клиента: $name\r\n
-     Его почта: $email\r\n
+     Его номер: $email\r\n
      Тема разговора: $message\r\n "
 );
 ?>

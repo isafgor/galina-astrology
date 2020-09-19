@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.css?255443">
-    <link rel="stylesheet" href="css/fonts.css?255443">
-    <link rel="stylesheet" href="css/adaptive.css?255443"/>
+    <link rel="stylesheet" href="css/main.css?6795986469">
+    <link rel="stylesheet" href="css/fonts.css?6795986469">
+    <link rel="stylesheet" href="css/adaptive.css?6795986469"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Астрологические консультации</title>
 </head>
@@ -32,7 +32,7 @@
                     <a href="#contacts">Контакты</a>
                 </nav>
                 <div class="header__contacts mobile-hidden">
-                    +7 812 333 08 80
+                    +7 981 845 41 23
                     <img src="img/header/moon1.png" alt="">
                 </div>
                 <div id="burger" class="header__burger desktop-hidden" onclick="burgerMenu()">
@@ -78,7 +78,7 @@
                     <img src="img/header/arrow-down.svg" alt="">
                 </a>
                 <div class="header__social">
-                    <a href="https://wa.me/78123330880">
+                    <a href="https://wa.me/79818454123">
                         <img src="img/header/wats-icon.svg" alt="">
                     </a>
                     <a href="https://teleg.run/astrologpolshchikova">
@@ -183,7 +183,8 @@
                                     Ваши вопросы по любой сфере
                                 </li>
                             </ul>
-                            <button onclick="displayModal('modal1','flex')">3000р</button>
+<!--                            <button onclick="displayModal('modal1','flex')">3000р</button>-->
+                            <a href="#consultation">3000р</a>
                         </div>
                     </div>
                     <div class="products__item">
@@ -243,7 +244,8 @@
                                     Ваши вопросы по любой сфере
                                 </li>
                             </ul>
-                            <button onclick="displayModal('modal1','flex')">3000р</button>
+<!--                            <button onclick="displayModal('modal1','flex')">3000р</button>-->
+                            <a href="#consultation">3000р</a>
                         </div>
                     </div>
                     <div class="products__item">
@@ -390,12 +392,12 @@
                     </div>
                 </div>
             </section>
-            <section class="consultation">
+            <section id="consultation" class="consultation">
                 <h2>Заявка на консультацию</h2>
                 <p>Пожалуйста заполните анкету с вопросами </p>
                 <img class="mobile-hidden" src="img/consultation/1.svg" alt="">
                 <img class="mobile-hidden" src="img/consultation/2.svg" alt="">
-                <form action="consultation.php?255443" method="post">
+                <form action="consultation.php?6795986469" method="post">
                     <ol>
                         <li><input type="text" id="fio" placeholder="Имя, фамилия"></li>
                         <li><input type="text" id="birthday" placeholder="Дата рождения"></li>
@@ -428,16 +430,16 @@
                             <br>
                             и с радостью отвечу на все вопросы
                         </p>
-                        <span class="mobile-hidden">+7 812 333 08 80</span>
-                        <span class="mobile-hidden">gp12021999@gmail.com</span>
+                        <span class="mobile-hidden">+7 981 845 41 23</span>
+                        <span class="mobile-hidden">astrologpolshchikova@gmail.com</span>
                         <div class="contacts__links mobile-hidden">
-                            <a href="https://wa.me/78123330880"><img src="img/contacts/whats.svg" alt=""></a>
+                            <a href="https://wa.me/79818454123"><img src="img/contacts/whats.svg" alt=""></a>
                             <a href="https://teleg.run/astrologpolshchikova"><img src="img/contacts/telegram.svg" alt=""></a>
                         </div>
                     </div>
-                    <form method="post" action="contact.php?255443" class="contacts__form">
+                    <form method="post" action="contact.php?6795986469" class="contacts__form">
                         <input type="text" id="name" placeholder="Имя">
-                        <input type="text" id="email" placeholder="E-mail">
+                        <input type="text" id="email" placeholder="Whatsapp\Телеграм">
                         <input type="text" id="message" placeholder="Тема для разговора">
                         <button type="button" id="send">Отправить</button>
                     </form>
@@ -449,17 +451,17 @@
                 <a class="footer__logo" href="">
                     <img src="img/footer/logo.svg" alt="">
                 </a>
-                <p>gp12021999@gmail.com</p>
-                <p>+7 812 333 08 80</p>
+                <p>astrologpolshchikova@gmail.com</p>
+                <p>+7 981 845 41 23</p>
                 <div class="footer__social">
-                    <a href="https://wa.me/78123330880" class="mobile-hidden">
+                    <a href="https://wa.me/79818454123" class="mobile-hidden">
                         <img src="img/footer/whats.svg" alt="">
                     </a>
                     <a href="https://teleg.run/astrologpolshchikova" class="mobile-hidden">
                         <img src="img/footer/telegram.svg" alt="">
                     </a>
 
-                    <a href="https://wa.me/78123330880" class="desktop-hidden">
+                    <a href="https://wa.me/79818454123" class="desktop-hidden">
                         <img src="img/contacts/whats.svg" alt="">
                     </a>
                     <a href="https://teleg.run/astrologpolshchikova" class="desktop-hidden">
@@ -483,9 +485,9 @@
                 </span>
                 <div class="send-modal__body">
                     <h3>Давайте свяжемся</h3>
-                    <form method="post" action="contact.php?255443" class="contacts__form">
+                    <form method="post" action="contact.php?6795986469" class="contacts__form">
                         <input type="text" id="name-modal" placeholder="Имя">
-                        <input type="text" id="email-modal" placeholder="E-mail">
+                        <input type="text" id="email-modal" placeholder="Whatsapp\Телеграм">
                         <input type="text" id="message-modal" placeholder="Какой тариф Вам понравился?">
                         <button type="button" id="send-modal" onclick="displayModal('modal1','none')">Отправить</button>
                     </form>
@@ -517,7 +519,7 @@
     </div>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/main.js?255443"></script>
-    <script src="js/contact.js?255443"></script>
+    <script src="js/main.js?6795986469"></script>
+    <script src="js/contact.js?6795986469"></script>
 </body>
 </html>

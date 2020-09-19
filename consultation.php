@@ -1,5 +1,5 @@
 <?php
-$to      = 'gp12021999@gmail.com';
+$to      = 'astrologpolshchikova@gmail.com';
 $subject = 'Заявка на консультацию';
 $fio = $_POST['fio'];
 $birthday = $_POST['birthday'];
