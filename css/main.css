@@ -231,7 +231,7 @@ button {
     order: 1;
 }
 
-.products__offer a {
+.products__button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,8 +284,12 @@ button {
     top: -150px;
 }
 
-.products__item:nth-of-type(5) {
-    margin-bottom: 80px;
+.products__item:nth-of-type(6) {
+    margin-bottom: 150px;
+}
+
+.products__item:nth-of-type(6) .products__img img {
+    width: 500px;
 }
 
 .products__item:nth-of-type(5) .products__offer {
@@ -317,6 +321,13 @@ button {
     left: 416px;
 }
 
+.product__desc {
+    background: transparent !important;
+    color: #353030 !important;
+    display: contents;
+    font-weight: 600;
+    text-decoration: underline;
+}
 
 
 
