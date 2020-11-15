@@ -292,6 +292,18 @@ button {
     width: 500px;
 }
 
+.products__item:nth-of-type(6) .products__img img:nth-of-type(2) {
+    position: absolute;
+    left: -67px;
+    top: -47px;
+    width: 168px;
+}
+
+.products__item:nth-of-type(6) .products__offer {
+    margin-left: 187px;
+    max-width: 323px;
+}
+
 .products__item:nth-of-type(5) .products__offer {
     margin-top: 50px;
 }

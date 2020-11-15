@@ -296,6 +296,17 @@
         transform: rotate(-100deg);
     }
 
+    .products__item:nth-of-type(6) .products__img img:nth-of-type(2) {
+        position: absolute;
+        left: -57px;
+        top: 47px;
+        width: 168px;
+    }
+
+    .products__item:nth-of-type(6) .products__offer {
+        margin-left: 0;
+    }
+
     .products__price {
         font-weight: 600;
         font-size: 14px;
